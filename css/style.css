@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Merriweather, serif;
+}
+
+/* logo */
+.logo {
+  background-color: #541213;
+}
+
+/* navbar start */
+.navbar {
+  background-color: #541213;
+}
+
+#cafea-to-go,
+#bauturi-calde,
+#snack-bauturi-reci {
+  color: #541213;
+}
+
+#cafea-to-go:hover,
+#bauturi-calde:hover,
+#snack-bauturi-reci:hover {
+  background-color: #541213;
+  color: #fff;
+}
+
+/* cafea to go start */
+
+.container-automate {
+  margin-top: 5%;
+}
+
+.sub-titlu-automate {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#titlu-cafea-to-go,
+#titlu-bauturi-calde,
+#titlu-vitrine {
+  font-family: Galada, sans-serif;
+  font-weight: bold;
+  color: #541213;
+}
+
+.automate-to-go,
+.bauturi-calde,
+.vitrine {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10%;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #541213;
+}
+
+figure img {
+  width: 180px;
+  height: 300px;
+}
+
+.bauturi-calde img {
+  width: 150px;
+  height: 300px;
+}
+
+.buton {
+  width: 180px;
+  padding: 2%;
+  background-color: #541213;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+.buton:hover {
+  background-color: #6f1314;
+  color: #fff;
+}
+
+/* footer start */
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #541213;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer p:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* revizie tehnica  */
+
+.container-revizie-tehnica {
+  padding: 5%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container-revizie-tehnica ul {
+  list-style: none;
+}
+
+.container-revizie-tehnica ul li::before {
+  content: "\2022";
+  color: #541213;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.h1-revizie {
+  font-family: Galada, sans-serif;
+  font-weight: bold;
+  color: #541213;
+}
+
+.poza img {
+  max-width: 300px;
+}
+
+/* termeni si conditii */
+
+.container-termeni {
+  padding: 5%;
+}
+
+.container-termeni ul {
+  list-style: none;
+}
+
+.container-termeni ul li::before {
+  content: "\2022";
+  color: #541213;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.h1-termeni {
+  font-family: Galada, sans-serif;
+  font-weight: bold;
+  color: #541213;
+}
+
+/* despre noi */
+
+.h1-noi {
+  font-family: Galada, sans-serif;
+  font-weight: bold;
+  color: #541213;
+}
+
+.container-noi {
+  padding: 5%;
+}
+
+.container-noi ul {
+  list-style: none;
+}
+
+.container-noi ul li::before {
+  content: "\2022";
+  color: #541213;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.container-noi img {
+  float: left;
+  width: 25%;
+  margin-right: 5%;
+}
+
+/* contact */
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.h1-contact {
+  font-family: Galada, sans-serif;
+  font-weight: bold;
+  color: #541213;
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.contact-form label {
+  color: #541213;
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.locatie-imagine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.locatie-imagine img {
+  width: 10%;
+}
+
+.form-label::after {
+  content: " *";
+  color: #f00;
+}
+
+#submit {
+  width: 200px;
+  padding: 2%;
+  background-color: #541213;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+#submit:hover {
+  background-color: #6f1314;
+  color: #fff;
+}
+
+#completat-corect {
+  visibility: hidden;
+  background-color: #fff;
+  color: #541213;
+  text-align: center;
+}
+
+#completat-corect.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#completat-gresit {
+  visibility: hidden;
+  background-color: #fff;
+  color: #541213;
+  text-align: center;
+}
+
+#completat-gresit.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-form {
+    width: 80%;
+  }
+  .locatie-imagine {
+    display: none;
+  }
+}
