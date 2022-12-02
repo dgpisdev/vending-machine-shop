@@ -4,20 +4,20 @@ function submitForm() {
   const phoneNumber = document.getElementById("tel-input").value;
   const subjectMessage = document.getElementById("subject-input");
   const yourMessage = document.getElementById("text-area").value;
-  const redMessage = "Trebuie sa completezi toate campurile obligatorii!";
-  const greenMessage = "Mesajul dumneavoastra a fost transmis cu succes!";
+  const completatGresit = "Trebuie sa completezi toate campurile obligatorii!";
+  const completatCorect = "Mesajul dumneavoastra a fost transmis cu succes!";
   const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   var x = document.getElementById("completat-corect");
   var y = document.getElementById("completat-gresit");
   x.className = "show";
   y.className = "show";
   if ((yourName == "") | (emailAdress == "") | (yourMessage == "")) {
-    document.getElementById("completat-gresit").innerHTML = redMessage;
+    document.getElementById("completat-gresit").innerHTML = completatGresit;
     setTimeout(function () {
       y.className = y.className.replace("show", "");
     }, 10000);
   } else if (emailAdress.match(mailformat)) {
-    document.getElementById("completat-corect").innerHTML = greenMessage;
+    document.getElementById("completat-corect").innerHTML = completatCorect;
     setTimeout(function () {
       x.className = x.className.replace("show", "");
     }, 3000);
