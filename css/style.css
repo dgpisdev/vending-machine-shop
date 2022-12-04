@@ -5,16 +5,13 @@
   font-family: Merriweather, serif;
 }
 
-/* logo */
-.logo {
-  background-color: #541213;
-}
-
-/* navbar start */
+/* logo + navbar background color */
+.logo,
 .navbar {
   background-color: #541213;
 }
 
+/* navbar start */
 #cafea-to-go,
 #bauturi-calde,
 #snack-bauturi-reci {
@@ -28,29 +25,24 @@
   color: #fff;
 }
 
-/* cafea to go start */
-
+/* container to go - bauturi calde -  vitrine snack */
 .container-automate {
   margin-top: 5%;
 }
 
-.sub-titlu-automate {
+.container-logo-titlu {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 }
 
-#titlu-cafea-to-go,
-#titlu-bauturi-calde,
-#titlu-vitrine {
+.container-titlu {
   font-family: Galada, sans-serif;
   font-weight: bold;
   color: #541213;
 }
 
-.automate-to-go,
-.bauturi-calde,
-.vitrine {
+.container-content {
   display: flex;
   flex-flow: row wrap;
   gap: 10%;
@@ -94,7 +86,6 @@ figure img {
 }
 
 /* footer start */
-
 footer {
   display: flex;
   flex-flow: row wrap;
@@ -116,107 +107,53 @@ footer p:first-child {
   font-weight: bold;
 }
 
-/* revizie tehnica  */
+/* revizie tehnica - termeni si conditii - despre noi  */
+.titlu-pagina {
+  font-family: Galada, sans-serif;
+  font-weight: bold;
+  color: #541213;
+}
+
+.lista {
+  padding: 5%;
+}
+
+.lista ul {
+  list-style: none;
+}
+
+.lista ul li::before {
+  content: "\2022";
+  color: #541213;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
 
 .container-revizie-tehnica {
-  padding: 5%;
   display: flex;
   flex-flow: row wrap;
 }
 
-.container-revizie-tehnica ul {
-  list-style: none;
-}
-
-.container-revizie-tehnica ul li::before {
-  content: "\2022";
-  color: #541213;
-  font-size: 1.5em;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.h1-revizie {
-  font-family: Galada, sans-serif;
-  font-weight: bold;
-  color: #541213;
-}
-
-.poza img {
-  max-width: 300px;
-}
-
-/* termeni si conditii */
-
-.container-termeni {
-  padding: 5%;
-}
-
-.container-termeni ul {
-  list-style: none;
-}
-
-.container-termeni ul li::before {
-  content: "\2022";
-  color: #541213;
-  font-size: 1.5em;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.h1-termeni {
-  font-family: Galada, sans-serif;
-  font-weight: bold;
-  color: #541213;
-}
-
-/* despre noi */
-
-.h1-noi {
-  font-family: Galada, sans-serif;
-  font-weight: bold;
-  color: #541213;
-}
-
 .container-noi {
-  padding: 5%;
+  text-align: justify;
 }
-
-.container-noi ul {
-  list-style: none;
-}
-
-.container-noi ul li::before {
-  content: "\2022";
-  color: #541213;
-  font-size: 1.5em;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
 .container-noi img {
   float: left;
   width: 25%;
   margin-right: 5%;
 }
 
-/* contact */
+.poza img {
+  max-width: 300px;
+}
 
+/* contact */
 .contact {
   display: flex;
   justify-content: space-around;
-}
-
-.h1-contact {
-  font-family: Galada, sans-serif;
-  font-weight: bold;
-  color: #541213;
 }
 
 .contact-form {
@@ -290,38 +227,26 @@ textarea {
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-@media only screen and (max-width: 800px) {
-  .contact-form {
-    width: 80%;
-  }
-  .locatie-imagine {
-    display: none;
-  }
-
-  .stoc-epuizat {
-    display: none;
-  }
-}
 /* detalii produs */
+.container-produs {
+  padding: 5%;
+  text-align: justify;
+}
 
-.stoc-epuizat {
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  font-weight: bold;
-  border: 5px solid #541213;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  width: 80%;
-  padding: 20px;
+.container-produs h4 {
   text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #541213;
+}
+
+.container-produs img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
 }
 
 /* statistici */
-
 .statistici .column {
   float: left;
   width: 25%;
@@ -337,14 +262,6 @@ textarea {
   clear: both;
 }
 
-@media screen and (max-width: 600px) {
-  .statistici .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
@@ -355,4 +272,19 @@ textarea {
 
 .fa {
   font-size: 50px;
+}
+
+/* media queries  */
+@media only screen and (max-width: 800px) {
+  .contact-form {
+    width: 80%;
+  }
+  .locatie-imagine {
+    display: none;
+  }
+  .statistici .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
 }
