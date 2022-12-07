@@ -1,3 +1,4 @@
+// contact
 function submitForm() {
   const numeInput = document.getElementById("nume-input").value;
   const adresaEmail = document.getElementById("email-input").value;
@@ -33,5 +34,50 @@ function submitForm() {
     setTimeout(function () {
       y.className = y.className.replace("show", "");
     }, 5000);
+  }
+}
+
+// inregistrare si autentificare
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+  location.replace("../index.html");
+}
+
+function autentificare() {
+  const numeUtilizator = document.getElementById("nume-utilizator").value;
+  const parolaUtilizator = document.getElementById("parola").value;
+  if ((numeUtilizator == "") | (parolaUtilizator == "")) {
+    document.getElementById("overlay").style.display = "none";
+  } else {
+    document.getElementById("overlay").style.display = "block";
+    event.preventDefault();
+  }
+}
+
+function inregistrare() {
+  const nume = document.getElementById("nume").value;
+  const prenume = document.getElementById("prenume").value;
+  const numeUtilizator = document.getElementById("nume-utilizator").value;
+  const email = document.getElementById("email").value;
+  const telefon = document.getElementById("numar").value;
+  const parola = document.getElementById("parola").value;
+  const repetaParola = document.getElementById("repeta-parola");
+  if (
+    (nume == "") |
+    (prenume == "") |
+    (numeUtilizator == "") |
+    (email == "") |
+    (telefon == "") |
+    (parola == "") |
+    (repetaParola == "")
+  ) {
+    document.getElementById("overlay").style.display = "none";
+  } else {
+    document.getElementById("overlay").style.display = "block";
+    event.preventDefault();
   }
 }
