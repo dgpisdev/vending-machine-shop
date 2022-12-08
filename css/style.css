@@ -33,7 +33,7 @@ input[type="number"] {
 
 /* container to go - bauturi calde -  vitrine snack */
 .container-automate {
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .container-logo-titlu {
@@ -53,8 +53,7 @@ input[type="number"] {
   flex-flow: row wrap;
   gap: 10%;
   justify-content: space-around;
-  margin-left: 14%;
-  margin-right: 14%;
+  margin: 0 14%;
 }
 
 figcaption {
@@ -69,8 +68,7 @@ figure img {
   width: 120px;
   height: 250px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .buton {
@@ -120,7 +118,7 @@ footer p:first-child {
 }
 
 .lista {
-  padding: 10%;
+  padding: 5% 10%;
 }
 
 .lista ul {
@@ -142,13 +140,10 @@ footer p:first-child {
   flex-flow: row wrap;
 }
 
-.container-noi {
-  text-align: justify;
-}
 .container-noi img {
   float: left;
   width: 25%;
-  margin-right: 5%;
+  margin-right: 2%;
 }
 
 .poza img {
@@ -197,7 +192,7 @@ textarea {
 
 #submit {
   width: 200px;
-  padding: 2%;
+  padding: 1%;
   background-color: #541213;
   border: none;
   border-radius: 10px;
@@ -210,49 +205,18 @@ textarea {
   color: #fff;
 }
 
-#completat-corect {
+#afisare-mesaj {
   visibility: hidden;
   background-color: #fff;
   color: #541213;
+  font-weight: bold;
   text-align: center;
 }
 
-#completat-corect.show {
+#afisare-mesaj.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-#completat-gresit {
-  visibility: hidden;
-  background-color: #fff;
-  color: #541213;
-  text-align: center;
-}
-
-#completat-gresit.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-/* detalii produs */
-.container-produs {
-  padding: 5%;
-  text-align: justify;
-}
-
-.container-produs h4 {
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-color: #541213;
-}
-
-.container-produs img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2%;
 }
 
 /* statistici */
@@ -273,7 +237,7 @@ textarea {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 5px #000;
   padding: 16px;
   text-align: center;
   background-color: #541213;
@@ -284,21 +248,7 @@ textarea {
   font-size: 50px;
 }
 
-/* media queries  */
-@media only screen and (max-width: 800px) {
-  .contact-form {
-    width: 80%;
-  }
-  .locatie-imagine {
-    display: none;
-  }
-  .statistici .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-/*  */
+/* adauga in cos  */
 .alert {
   margin: 2%;
   background-color: #f00;
@@ -320,8 +270,24 @@ textarea {
 .closebtn:hover {
   color: black;
 }
-/* cont */
 
+.cos-img {
+  padding: 15%;
+}
+
+.cos-img img {
+  border: 10px solid #541213;
+  border-left-color: #009933;
+  border-bottom-color: #009933;
+  border-radius: 25% 0;
+}
+
+.cos-img img:hover {
+  scale: 1.01;
+  cursor: pointer;
+}
+
+/* cont  */
 .buton-cont {
   background-color: #541213;
   color: white;
@@ -347,7 +313,7 @@ textarea {
 }
 
 .container-cont {
-  margin: 4% 15%;
+  margin: 0 15% 2%;
 }
 
 span.psw {
@@ -385,19 +351,17 @@ span.psw {
   -ms-transform: translate(-50%, -50%);
 }
 
-.cos-img {
-  padding: 15%;
-}
-
-.cos-img img {
-  border: 10px solid #541213;
-  border-left-color: #f00;
-  border-bottom-color: #f00;
-  border-top-left-radius: 25%;
-  border-bottom-right-radius: 25%;
-}
-
-.cos-img img:hover {
-  scale: 1.01;
-  cursor: pointer;
+/* media queries  */
+@media only screen and (max-width: 800px) {
+  .contact-form {
+    width: 80%;
+  }
+  .locatie-imagine {
+    display: none;
+  }
+  .statistici .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
 }
