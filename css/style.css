@@ -53,8 +53,8 @@ input[type="number"] {
   flex-flow: row wrap;
   gap: 10%;
   justify-content: space-around;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 14%;
+  margin-right: 14%;
 }
 
 figcaption {
